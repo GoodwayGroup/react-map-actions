@@ -29,3 +29,12 @@ mapActions([
 * actionPrefix _String_
 
 Returns an Object
+
+## Releases
+
+Strictly adhere to [semantic versioning](http://semver.org/) for all versions. When a release is ready, the Lead Maintainer will go through the following steps:
+
+1. Make sure the local master branch is 100% up to date with `upstream:master`.
+2. Run `npm publish` in the command line to update the npm registry.
+3. Tag the version just published to npm. Run `git tag -a vx.y.z -m "version x.y.z"` where `x.y.z` matches the `version` key in "package.json". The format of the tag and the message should match exactly as in the example.
+4. Update the tags in the `upstream` remote via `git push upstream --tags`.
