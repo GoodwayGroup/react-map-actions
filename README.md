@@ -30,9 +30,13 @@ mapActions([
 
 Returns an Object
 
+## Milestones
+
+Milestones are used to keep track of future releases. Both issues and pull requests related to the future release should have a milestone attached to them. Milestone names should be the same as the semantic version of the module. Once all of the attached issues and pull requests are completed, a new version of the module should be published to the npm registry. The milestone is then considered "complete" and should be closed. There should always be one open milestone setup. After closing a milestone, create a new one incrementing the patch number (x.x.patch). When assigning an issue to a milestone that is not just a bug fix but a new feature or breaking change, edit the milestone to reflect the new version. This is critical as it is the only clear way to communicate between collaborators what the changes in master include. Do no assign milestones to questions, discussions, any issue that does not result in a code change, documentation, examples, or pure tests changes. When publishing a new version to npm, tag master with git tag -a v1.2.3 -m 'version 1.2.3' and git push origin --tags. Then close the milestone matching the release and create a new one.
+
 ## Releases
 
-Strictly adhere to [semantic versioning](http://semver.org/) for all versions. When a release is ready, the Lead Maintainer will go through the following steps:
+Strictly adhere to [semantic versioning](http://semver.org/) for all versions. When a milestone is complete, the Lead Maintainer will go through the following steps:
 
 1. Make sure the local master branch is 100% up to date with `upstream:master`.
 2. Run `npm publish` in the command line to update the npm registry.
