@@ -1,0 +1,31 @@
+{
+  "name": "@goodwaygroup/react-map-actions",
+  "version": "1.0.0",
+  "description": "Helper to create a map of actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "lab -L -a code -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoodwayGroup/react-map-actions.git"
+  },
+  "keywords": [
+    "react",
+    "map",
+    "actions",
+    "goodwaygroup",
+    "redux"
+  ],
+  "author": "Julian Lannigan <julian.lannigan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GoodwayGroup/react-map-actions/issues"
+  },
+  "homepage": "https://github.com/GoodwayGroup/react-map-actions#readme",
+  "devDependencies": {
+    "code": "^5.1.2",
+    "lab": "^15.1.2"
+  },
+  "dependencies": {}
+}
