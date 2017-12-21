@@ -4,7 +4,7 @@
   "description": "Helper to create a map of actions",
   "main": "index.js",
   "scripts": {
-    "test": "lab -L -a code -c"
+    "test": "lab -L -a code -c -r console -o stdout -r lcov -o lcov.info"
   },
   "repository": {
     "type": "git",

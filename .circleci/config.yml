@@ -6,6 +6,7 @@ defaults: &defaults
     - checkout
     - run: npm install
     - run: npm test
+    - run: bash <(curl -s https://codecov.io/bash)
 
 jobs:
   build-node8:
