@@ -1,6 +1,6 @@
 {
   "name": "@goodwaygroup/react-map-actions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Helper to create a map of actions",
   "main": "index.js",
   "scripts": {
