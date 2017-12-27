@@ -1,0 +1,6 @@
+{
+  "extends": "hapi",
+  "rules": {
+    "prefer-arrow-callback": "off"
+  }
+}
