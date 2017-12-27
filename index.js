@@ -6,15 +6,15 @@
  * @param  {String} actionPrefix   Prefix to all actions
  * @return {Object}                Actions as keys and {prefix}/{action} as the value
  */
-module.exports = (actions, actionPrefix) => {
+module.exports = function (actions, actionPrefix) {
 
     if (Array.isArray(actions) === false) {
         throw new Error('actions must be an array');
     }
 
-    return actions.reduce((mapping, action) => {
+    return actions.reduce(function (mapping, action) {
 
-        mapping[action] = `${actionPrefix}/${action}`;
+        mapping[action] = actionPrefix + '/' + action;
         return mapping;
     }, {});
 };
